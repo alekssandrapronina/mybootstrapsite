@@ -113,8 +113,61 @@
         .carousel-control-next:hover .carousel-control-next-icon {
             background-color: rgba(0, 0, 0, 0.8); /* Muuta väriä hiiren osoittaessa */
         }
-        
 
+        .btn-primary {
+    background-color: #a5b8a1;
+    border-color: #a5b8a1;    
+    color: white;              
+}
+
+.btn-primary:hover {
+    background-color: #677165;
+    border-color: #677165;
+}
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between; 
+}
+
+.align-items-center {
+    align-items: center; 
+}
+
+.mt-4 {
+    margin-top: 1.5rem;
+}
+#contact {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    color: #677165;
+    margin-bottom: 20px;
+}
+
+#contact .form-control {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #a5b8a1;
+}
+
+#contact .btn-primary {
+    background-color: #a5b8a1;
+    border-color: #a5b8a1;
+    color: white;
+}
+
+#contact .btn-primary:hover {
+    background-color: #677165;
+    border-color: #677165;
+}
 
         footer {
             background-color: #343a40;
@@ -129,6 +182,7 @@
             position: center;
 
         }
+
     </style>
 </head>
 <body>
@@ -164,7 +218,7 @@
     </div>
 </nav>
 
-    <!-- Sankariosa (Hero Section) -->
+    <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-content">
             <h1>LUONNONMUKAISESTI PARHAIMMILLAAN</h1>
@@ -173,7 +227,7 @@
         </div>
     </section>
      <!-- Bestsellers-karuselli -->
-     <section id="products" class="container my-5"> <!-- ID ankkurilinkille -->
+     <section id="products" class="container my-5">
         <h2 class="text-center mb-4">TUTUSTU SUOSIKKITUOTTEISIIN</h2>
         <div id="bestsellersCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
@@ -260,29 +314,156 @@
     </div>
 </section>
 
-<!-- Tuotteen modaalit -->
+<!-- Ikkuna EKOLOGISET SIIVOUSLIINAT -->
 <div class="modal fade" id="product1Modal" tabindex="-1" aria-labelledby="product1ModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
             <div class="modal-body">
                 <div class="row">
-                    <!-- Kuva vasemmalla -->
                     <div class="col-md-6">
                         <img src="images/siivousliinnat.jpeg" class="img-fluid" alt="Tuote 1">
                     </div>
-                    <!-- Nimi, kuvaus, hinta ja painike oikealla -->
                     <div class="col-md-6">
                         <h5 class="modal-title" id="product1ModalLabel">EKOLOGISET SIIVOUSLIINAT</h5>
-                        <p>Ympäristöystävälliset siivousliinat, jotka sopivat kodin siivoukseen.</p>
+                        <p>Ekologiset siivousliinat, jotka ovat monikäyttöisiä ja ympäristöystävällisiä. Täydellisiä kodin puhdistamiseen.</p>
                         <p><strong>Hinta:</strong> 19,99 €</p>
-                        <a href="#" class="btn btn-primary">Lisää ostoskoriin</a>
-                        <button type="button" class="btn btn-secondary mt-2" data-bs-dismiss="modal">Sulje</button>
+                       <!-- Button -->
+                       <div class="d-flex justify-content-start align-items-center mt-4">
+                        <a href="#" class="btn btn-primary me-2">Lisää ostoskoriin</a> <!-- Добавляем отступ справа -->
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+                    </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Ikkuna LUOMU MATCHA-JAUHE -->
+<div class="modal fade" id="product2Modal" tabindex="-1" aria-labelledby="product2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/matcha powder.jpeg" class="img-fluid" alt="Tuote 2">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="modal-title" id="product2ModalLabel">LUOMU MATCHA-JAUHE</h5>
+                        <p>Perinteinen japanilainen vihreä tee -jauhe, joka on rikas antioksidanteista ja tarjoaa luonnollista kofeiinia virkeyteen.</p>
+                        <p><strong>Hinta:</strong> 24,99 €</p>
+                        <!-- Button -->
+                        <div class="d-flex justify-content-start align-items-center mt-4">
+                            <a href="#" class="btn btn-primary me-2">Lisää ostoskoriin</a> <!-- Добавляем отступ справа -->
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ikkuna LUOMU KOOKOSÖLJY -->
+<div class="modal fade" id="product3Modal" tabindex="-1" aria-labelledby="product3ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/coconutoil.jpeg" class="img-fluid" alt="Tuote 3">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="modal-title" id="product3ModalLabel">LUOMU KOOKOSÖLJY</h5>
+                        <p>Monikäyttöinen kylmäpuristettu kookosöljy, joka soveltuu sekä ruoanlaittoon että kauneudenhoitoon. Rikas terveellisistä rasvoista ja vitamiineista.</p>
+                        <p><strong>Hinta:</strong> 14,99 €</p>
+                        <!-- Button -->
+                        <div class="d-flex justify-content-start align-items-center mt-4">
+                            <a href="#" class="btn btn-primary me-2">Lisää ostoskoriin</a> <!-- Добавляем отступ справа -->
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ikkuna LUOMU HUNAJA -->
+<div class="modal fade" id="product4Modal" tabindex="-1" aria-labelledby="product4ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/luomuhunaja.jpeg" class="img-fluid" alt="Tuote 4">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="modal-title" id="product4ModalLabel">LUOMU HUNAJA</h5>
+                        <p>Luonnollinen hunaja, joka on kerätty ekologisesti puhtailta mehiläistarhoilta. Rikas antioksidanteista ja monista hyödyllisistä ominaisuuksista.</p>
+                        <p><strong>Hinta:</strong> 9,99 €</p>
+                        <!-- Button -->
+                        <div class="d-flex justify-content-start align-items-center mt-4">
+                            <a href="#" class="btn btn-primary me-2">Lisää ostoskoriin</a> <!-- Добавляем отступ справа -->
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ikkuna LUOMU KEKSIT -->
+<div class="modal fade" id="product5Modal" tabindex="-1" aria-labelledby="product5ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/luomukeksit.jpeg" class="img-fluid" alt="Tuote 5">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="modal-title" id="product5ModalLabel">LUOMU KEKSIT</h5>
+                        <p>Terveellinen ja herkullinen luomukeksi, valmistettu kaurasta, pähkinöistä ja kuivatuista hedelmistä ilman lisättyä sokeria.</p>
+                        <p><strong>Hinta:</strong> 4,99 €</p>
+                        <!-- Button -->
+                        <div class="d-flex justify-content-start align-items-center mt-4">
+                            <a href="#" class="btn btn-primary me-2">Lisää ostoskoriin</a> <!-- Добавляем отступ справа -->
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ikkuna BAMBU HAMMASHARJA -->
+<div class="modal fade" id="product6Modal" tabindex="-1" aria-labelledby="product6ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <img src="images/bambooharja.jpeg" class="img-fluid" alt="Tuote 6">
+                    </div>
+                    <div class="col-md-6">
+                        <h5 class="modal-title" id="product6ModalLabel">BAMBU HAMMASHARJA</h5>
+                        <p>Kestävä ja biohajoava hammasharja, joka on valmistettu luonnonmukaisesta bambusta. Ympäristöystävällinen vaihtoehto perinteiselle hammasharjalle.</p>
+                        <p><strong>Hinta:</strong> 5,99 €</p>
+                        <!-- Button -->
+                        <div class="d-flex justify-content-start align-items-center mt-4">
+                            <a href="#" class="btn btn-primary me-2">Lisää ostoskoriin</a> <!-- Добавляем отступ справа -->
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Sulje</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Arvostelutaulukko -->
 <section id="reviews" class="container my-5">
@@ -381,6 +562,26 @@
     </div>
 </section>
 
+<!-- Ota yhteyttä - Form -->
+<section id="contact" class="container my-5">
+    <h2 class="text-center mb-4">Ota yhteyttä</h2>
+    <form>
+        <div class="mb-3">
+            <label for="name" class="form-label">Nimi</label>
+            <input type="text" class="form-control" id="name" placeholder="Kirjoita nimesi" required>
+        </div>
+        <div class="mb-3">
+            <label for="email" class="form-label">Sähköposti</label>
+            <input type="email" class="form-control" id="email" placeholder="Kirjoita sähköpostisi" required>
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label">Viesti</label>
+            <textarea class="form-control" id="message" rows="5" placeholder="Kirjoita viestisi" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Lähetä</button>
+    </form>
+</section>
+
 <!-- Footer -->
 <footer class="bg-dark text-white text-center text-lg-start mt-5">
     <div class="container p-4">
@@ -388,7 +589,7 @@
             <!-- Yhteystiedot -->
             <div class="col-lg-6 col-md-12 mb-4">
                 <h5 class="text-uppercase">Yhteystiedot</h5>
-                <p>Sähköposti: info@example.com</p>
+                <p>Sähköposti: office@naturebasket.com</p>
                 <p>Puhelin: +123 456 7890</p>
             </div>
 
@@ -415,8 +616,13 @@
         <a class="text-white" href="https://example.com/">example.com</a>
     </div>
 </footer>
+<script>
+    document.querySelector('form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        alert('Kiitos! Viestisi on lähetetty.');
 
-
+    });
+</script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
 </body>
